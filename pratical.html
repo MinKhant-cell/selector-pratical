@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .home{
+            width: 100%;
+            height: 100vh;
+            background-image: url("anime_girl.jpg");
+            background-size: cover;
+            position: relative;
+            z-index: -2;
+            display: flex;
+            align-items: center;
+
+        }
+        .home::before{
+            content: "";
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            background-image: radial-gradient(circle at 58% 50%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 60%,transparent 60%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 36% 79%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 49%,transparent 49%, transparent 99%,transparent 99%, transparent 100%),radial-gradient(circle at 48% 23%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 50%,transparent 50%, transparent 87%,transparent 87%, transparent 100%),radial-gradient(circle at 55% 69%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 3%,transparent 3%, transparent 19%,transparent 19%, transparent 100%),radial-gradient(circle at 38% 69%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 15%,transparent 15%, transparent 33%,transparent 33%, transparent 100%),linear-gradient(45deg, rgb(14, 124, 138),rgb(44, 254, 203));            opacity: 0.6;
+            z-index: -1;
+        }
+        .home-content{
+
+        }
+        .home-content-text{
+            width: 450px;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section class="home">
+        <div class="home-content-text">
+            <h1>Hello JavaScript!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto blanditiis doloribus ex exercitationem expedita hic impedit iste iusto laudantium maiores molestiae, odit quibusdam quis reprehenderit sint ullam velit veritatis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto aut distinctio dolore doloremque error harum illo iusto magni molestias nemo nihil omnis possimus quas quisquam quos repellendus, sint voluptatum.</p>
+        </div>
+    </section>
+    <section class="home-content">
+
+    </section>
+</body>
+</html>
